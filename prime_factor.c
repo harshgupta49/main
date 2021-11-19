@@ -2,15 +2,16 @@
 
 int main()
 {
-    int num,i,j,a;
+    int num,j,r;
     printf("enter the number = ");
     scanf("%d",&num);
-    for(i=2;i<=num;i++){
+    while(num>1){
         for(j=2;j<=num;j++){
-            a=num%j;
-            if(a==0){
+            r=num%j;
+            if(r==0){
                 printf("%d ",j);
                 num=num/j;
+                break;
             }
         }
     }
