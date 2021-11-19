@@ -8,9 +8,10 @@ int main()
     for(i=1;i<=num-1;i++){
         if(num%i==0)
            a=i;
+        
     }
          if(a!=1)
-            printf("number if not prime factor");
+            printf("number is not prime number");
             else
             printf(" prime number");
 
