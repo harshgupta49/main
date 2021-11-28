@@ -2,15 +2,15 @@
 
 int main()
 {
-    int num,a=0,z=0,r=1,i=1;
+    int num,a=0,c=1,b,i=1;
     printf("Enter the nth term of the phibono series = ");
     scanf("%d",&num);
     while(i<=num){
-        a=z;
-        z=r;
-        r=r+a;
-        i++;
-        printf("%d ",r);
+       b=a;
+       a=c;
+       c=a+b;
+       printf("%d ",b);
+       i++;
     }
 
     return 0;
