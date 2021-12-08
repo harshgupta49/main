@@ -13,8 +13,8 @@ int main()
 		scanf("%d",&b[i]);
 	}
 	printf("Sum of arrays =");
-	for(i=0;i<n;i++){
-		c[j]=a[i]+b[i];
+	for(j=0;j<n;j++){
+		c[j]=a[j]+b[j];
 		printf("%d ",c[j]);
 	}
 
