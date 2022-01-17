@@ -2,10 +2,11 @@
 
 int main()
 {
-    int i,j,*p,a[10][10],r,c;
-    p=a[0];
+    int i,j,*p,r,c;
     printf("Enter size of row and column of matrix :");
     scanf("%d %d",&r,&c);
+    int a[r][c];
+    p=a[0];
     printf("Enter the element of matrix :\n");
     for(i=0;i<r*c;i++){
         scanf("%d",(p+i));
@@ -20,3 +21,4 @@ int main()
 
     return 0;
 }
+
