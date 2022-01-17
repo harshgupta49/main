@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+void scan(int *,int,int);
+void add(int *,int *,int *,int,int);
+void print(int *,int,int);
+
+int main()
+{
+    int r,c;
+    printf("Enter row and column of matrices : ");
+    scanf("%d %d",&r,&c);
+    int a[r][c],b[r][c],sum[r][c];
+    printf("Enter elements of first matrix :\n");
+    scan(a[0],r,c);
+    printf("Enter elements of second matrix :\n");
+    scan(b[0],r,c);
+    printf("Sum of matrix :\n");
+    add(sum[0],a[0],b[0],r,c);
+    print(sum[0],r,c);
+
+    return 0;
+}
+void scan(int *p,int r,int c){
+    int i;
+    for(i=0;i<r*c;i++){
+        scanf("%d",p+i);
+    }
+}
+void add(int *p,int *q,int *r,int R,int C){
+    int i;
+    for(i=0;i<R*C;i++){
+        *(p+i)=*(q+i)+*(r+i);
+    }
+}
+void print(int *p,int r,int c){
+    int i;
+    for(i=0;i<r*c;i++){
+        printf("%d ",*(p+i));
+        if(i%c==c-1){
+            printf("\n");
+        }
+    }
+}
